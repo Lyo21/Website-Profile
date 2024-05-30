@@ -1,0 +1,162 @@
+<!--=============== Penterjemahan ===============-->
+      <section class="services section" id="services">
+        <h2 class="section_title">Penterjemah</h2>
+        <p class="section_description">
+          Perhitungan Biaya yang Jelas, Penyerahan Tepat Waktu, dan Penjagaan Kerahasiaan
+        </p>
+
+        <div class="services_container container grid">
+          <div class="services_item">
+            <i class="uil uil-letter-japanese-a services_icon"></i>
+
+            <h3 class="services_title">Jepang - Indonesia (850/Kata)</h3>
+            <p class="services_description">
+              Perhitungan 1 kata untuk bahan dalam Bahasa Indonesia/Inggris dan perhitungan 1 huruf untuk bahan dalam Bahasa Jepang.
+            </p>
+          </div>
+
+          <div class="services_item">
+            <i class="uil uil-letter-japanese-a services_icon"></i>
+
+            <h3 class="services_title">Indonesia - Jepang (1000/Kata)</h3>
+            <p class="services_description">
+              Perhitungan 1 kata untuk bahan dalam Bahasa Indonesia/Inggris dan perhitungan 1 huruf untuk bahan dalam Bahasa Jepang.
+            </p>
+          </div>
+
+          <div class="services_item">
+            <i class="uil uil-letter-english-a services_icon"></i>
+
+            <h3 class="services_title">Inggris - Indonesia (500/Kata)</h3>
+            <p class="services_description">
+              Perhitungan 1 kata untuk bahan dalam Bahasa Indonesia/Inggris dan perhitungan 1 huruf untuk bahan dalam Bahasa Jepang.
+            </p>
+          </div>
+
+          <div class="services_item">
+            <i class="uil uil-letter-english-a services_icon"></i>
+
+            <h3 class="services_title">Indonesia - Inggris (600/Kata)</h3>
+            <p class="services_description">
+              Perhitungan 1 kata untuk bahan dalam Bahasa Indonesia/Inggris dan perhitungan 1 huruf untuk bahan dalam Bahasa Jepang.
+            </p>
+          </div>
+
+          <div class="services_item">
+            <i class="uil uil-letter-japanese-a services_icon"></i>
+
+            <h3 class="services_title">Jepang - Inggris (1200/Kata)</h3>
+            <p class="services_description">
+              Perhitungan 1 kata untuk bahan dalam Bahasa Indonesia/Inggris dan perhitungan 1 huruf untuk bahan dalam Bahasa Jepang.
+            </p>
+          </div>
+
+          <div class="services_item">
+            <i class="uil uil-letter-english-a services_icon"></i>
+
+            <h3 class="services_title">Inggris - Jepang (1300/Kata)</h3>
+            <p class="services_description">
+              Perhitungan 1 kata untuk bahan dalam Bahasa Indonesia/Inggris dan perhitungan 1 huruf untuk bahan dalam Bahasa Jepang.
+            </p>
+          </div>
+        </div> 
+      </section>
+
+      <!--=============== Interpreter ===============-->
+      <section class="interpreter section" id="interpeter">
+        <h2 class="section_title">Interpreter</h2>
+        <p class="section_description">
+          Perhitungan Biaya yang Jelas, Penyerahan Tepat Waktu, dan Penjagaan Kerahasiaan
+        </p>
+
+        <div class="interpreter_container container grid">
+          <div class="interpreter_item">
+            <i class="uil uil-letter-japanese-a interpreter_icon"></i>
+
+            <h3 class="interpreter_title">Jepang - Indonesia - Jepang</h3>
+            <p class="interpreter_description">
+              <li>1/2 hari (4 jam) = 1 juta (nett)</li>
+              <li>1 hari (8 jam) = 2 juta (nett)</li>
+            </p>
+          </div>
+
+          <div class="interpreter_item">
+            <i class="uil uil-letter-japanese-a interpreter_icon"></i>
+
+            <h3 class="interpreter_title">Jepang - Inggris - Jepang</h3>
+            <p class="interpreter_description">
+              <li>1/2 hari (4 jam) = 1,5 juta (nett)</li>
+              <li>1 hari (8 jam) = 3 juta (nett)</li>
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+nav biar berubah warna
+const navLinks = document.querySelectorAll('.nav_link');
+
+function linkAction(event) {
+    // Only remove show-menu class if on mobile view
+    if (window.innerWidth <= 768) {
+        navMenu.classList.remove('show-menu');
+    }
+    
+    // Remove active-link class from all links
+    navLinks.forEach(link => link.classList.remove('active-link'));
+    
+    // Add active-link class to the clicked link
+    event.target.classList.add('active-link');
+}
+
+// Add event listener to each nav_link
+navLinks.forEach(link => link.addEventListener('click', linkAction));
+
+Sebelumnya
+const navLink = document.querySelectorAll('.nav_link');
+
+function linkAction() {
+    const navMenu = document.getElementById('nav-menu');
+    // when we click on each nav_link, we remove the show-menu class
+    navMenu.classList.remove('show-menu');
+}
+
+navLink.forEach((n) => n.addEventListener('click', linkAction));
+
+css 
+/* Logo image handling */
+#logo {
+  content: url('assets/img/LOGO MEGUMI PANJANG.png'); /* Default logo for dark mode */
+}
+
+@media (prefers-color-scheme: light) {
+  #logo {
+      content: url('assets/img/LOGO MEGUMI PANJANG (logo merah).png'); /* Logo for light mode */
+  }
+}
+
+.light-mode #logo {
+  content: url('assets/img/LOGO MEGUMI PANJANG (logo merah).png'); /* Logo for light mode */
+}
+
+.dark-mode #logo {
+  content: url('assets/img/LOGO MEGUMI PANJANG.png'); /* Logo for dark mode */
+}
+
+js 
+
+function toggleDarkMode() {
+        const body = document.body;
+        const logo = document.querySelector('.nav_logo img');
+    
+        // Toggle dark mode class
+        body.classList.toggle('light-mode');
+        body.classList.toggle('dark-mode');
+    
+        // Update logo based on mode
+        if (body.classList.contains('light-mode')) {
+            logo.src = 'assets/img/LOGO MEGUMI PANJANG (logo merah).png'; // Gambar untuk light mode
+        } else {
+            logo.src = 'assets/img/LOGO MEGUMI PANJANG.png'; // Gambar untuk dark mode
+        }
+    }

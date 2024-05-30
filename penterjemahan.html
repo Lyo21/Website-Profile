@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== UNICONS ===============-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Website Profile</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/logo_HD-favicon-removebg-preview.png" type="image/png">
+</head>
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav_logo">
+                <img src="assets/img/LOGO MEGUMI PANJANG.png" alt="Megumi Center Indonesia" class="footer_img" />
+            </a>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li><a href="index.html#home" class="nav_link">Beranda</a></li>
+
+                    <li><a href="index.html#about" class="nav_link">Profil</a></li>
+
+                    <li><a href="index.html#kursus" class="nav_link">Kursus</a></li>
+
+                    <li><a href="#services" class="nav_link active-link">Penterjemahan</a></li>
+
+                    <li><a href="guru.html" class="nav_link">Guru</a></li>
+
+                    <li><a href="#contact" class="nav_link">Kontak</a></li>
+                </ul>
+
+                <div class="nav_close" id="nav-close">
+                    <i class="ui uil-times"></i>
+                </div>
+            </div>
+
+            <div class="nav_socials">
+                <a
+                    href="mailto:linggap21@gmail.com"
+                    target="_blank"
+                    class="nav_social-link"
+                >
+                <i class="uil uil-envelope"></i>
+                </a>
+
+                <a
+                href="https://x.com/lyo_21"
+                target="_blank"
+                class="nav_social-link"
+                >
+                <i class="uil uil-twitter"></i>
+                </a>
+
+                <a
+                href="https://www.instagram.com/lyo.1/"
+                target="_blank"
+                class="nav_social-link"
+                >
+                <i class="uil uil-instagram"></i>
+                </a>
+
+                <a
+                href="https://wa.me/6281398438835"
+                target="_blank"
+                class="nav_social-link"
+                >
+                <i class="uil uil-whatsapp"></i>
+                </a>
+            </div>
+
+            <button onclick="toggleDarkMode()">
+                <svg width="30" height="30" id="light-icon">
+                    <circle cx="15" cy="15" r="6" fill="currentColor" />
+        
+                    <line
+                        id="ray"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        x1="15"
+                        y1="1"
+                        x2="15"
+                        y2="4"
+                    ></line>
+        
+                    <use href="#ray" transform="rotate(45 15 15)" />
+                    <use href="#ray" transform="rotate(90 15 15)" />
+                    <use href="#ray" transform="rotate(135 15 15)" />
+                    <use href="#ray" transform="rotate(180 15 15)" />
+                    <use href="#ray" transform="rotate(225 15 15)" />
+                    <use href="#ray" transform="rotate(270 15 15)" />
+                    <use href="#ray" transform="rotate(315 15 15)" />
+                </svg>
+                <svg width="30" height="30" id="dark-icon">
+                    <path
+                        fill="currentColor"
+                        d="
+                        M 23, 5
+                        A 12 12 0 1 0 23, 25
+                        A 12 12 0 0 1 23, 5"
+                    />
+                </svg>
+            </button>
+
+            <div class="nav_btns">
+                <a href="#contact" class="nav_link-btn btn">Let's Talk</a>
+
+                <div class="nav_toggle" id="nav-toggle">
+                <i class="uil uil-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== Penterjemahan ===============-->
+        <section class="services section" id="services">
+            <h2 class="section_title">Penterjemah</h2>
+            <p class="section_description">
+            Perhitungan Biaya yang Jelas, Penyerahan Tepat Waktu, dan Penjagaan Kerahasiaan
+            </p>
+
+            <div class="services_container container grid">
+                <div class="services_item">
+                    <i class="uil uil-letter-japanese-a services_icon"></i>
+
+                    <h3 class="services_title">Jepang - Indonesia (850/Kata)</h3>
+                    <p class="services_description">
+                    Perhitungan 1 kata untuk bahan dalam Bahasa Indonesia/Inggris dan perhitungan 1 huruf untuk bahan dalam Bahasa Jepang.
+                    </p>
+                </div>
+
+                <div class="services_item">
+                    <i class="uil uil-letter-japanese-a services_icon"></i>
+
+                    <h3 class="services_title">Indonesia - Jepang (1000/Kata)</h3>
+                    <p class="services_description">
+                    Perhitungan 1 kata untuk bahan dalam Bahasa Indonesia/Inggris dan perhitungan 1 huruf untuk bahan dalam Bahasa Jepang.
+                    </p>
+                </div>
+
+                <div class="services_item">
+                    <i class="uil uil-letter-english-a services_icon"></i>
+
+                    <h3 class="services_title">Inggris - Indonesia (500/Kata)</h3>
+                    <p class="services_description">
+                    Perhitungan 1 kata untuk bahan dalam Bahasa Indonesia/Inggris dan perhitungan 1 huruf untuk bahan dalam Bahasa Jepang.
+                    </p>
+                </div>
+
+                <div class="services_item">
+                    <i class="uil uil-letter-english-a services_icon"></i>
+
+                    <h3 class="services_title">Indonesia - Inggris (600/Kata)</h3>
+                    <p class="services_description">
+                    Perhitungan 1 kata untuk bahan dalam Bahasa Indonesia/Inggris dan perhitungan 1 huruf untuk bahan dalam Bahasa Jepang.
+                    </p>
+                </div>
+
+                <div class="services_item">
+                    <i class="uil uil-letter-japanese-a services_icon"></i>
+
+                    <h3 class="services_title">Jepang - Inggris (1200/Kata)</h3>
+                    <p class="services_description">
+                    Perhitungan 1 kata untuk bahan dalam Bahasa Indonesia/Inggris dan perhitungan 1 huruf untuk bahan dalam Bahasa Jepang.
+                    </p>
+                </div>
+
+                <div class="services_item">
+                    <i class="uil uil-letter-english-a services_icon"></i>
+
+                    <h3 class="services_title">Inggris - Jepang (1300/Kata)</h3>
+                    <p class="services_description">
+                    Perhitungan 1 kata untuk bahan dalam Bahasa Indonesia/Inggris dan perhitungan 1 huruf untuk bahan dalam Bahasa Jepang.
+                    </p>
+                </div>
+            </div> 
+        </section>
+
+        <!--=============== Interpreter ===============-->
+        <section class="interpreter section" id="interpeter">
+            <h2 class="section_title">Interpreter</h2>
+            <p class="section_description">
+            Perhitungan Biaya yang Jelas, Penyerahan Tepat Waktu, dan Penjagaan Kerahasiaan
+            </p>
+
+            <div class="interpreter_container container grid">
+                <div class="interpreter_item">
+                    <i class="uil uil-letter-japanese-a interpreter_icon"></i>
+
+                    <h3 class="interpreter_title">Jepang - Indonesia - Jepang</h3>
+                    <p class="interpreter_description">
+                        <li>1/2 hari (4 jam) = 1 juta (nett)</li>
+                        <li>1 hari (8 jam) = 2 juta (nett)</li>
+                    </p>
+                </div>
+
+                <div class="interpreter_item">
+                    <i class="uil uil-letter-japanese-a interpreter_icon"></i>
+
+                    <h3 class="interpreter_title">Jepang - Inggris - Jepang</h3>
+                    <p class="interpreter_description">
+                        <li>1/2 hari (4 jam) = 1,5 juta (nett)</li>
+                        <li>1 hari (8 jam) = 3 juta (nett)</li>
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!--=============== CONTACT ===============-->
+        <section class="contact section" id="contact">
+            <div class="contact_container container grid">
+                <div class="contact_content">
+                    <h2 class="section_title">Hubungi Kami</h2>
+
+                    <p class="contact_description">
+                    Hubungi saya jika ingin membuat website seperti ini:
+                    <a href="https://wa.me/6281398438835">0813-9843-8835</a>
+                    </p>
+
+                <form class="contact_form" id="contact-form">
+                    <div class="contact_form-input">
+                        <input
+                        type="text"
+                        name="name"
+                        placeholder="Nama Anda *"
+                        class="contact_input"
+                        id="contact-name"
+                        />
+                    </div>
+
+                    <div class="contact_form-input">
+                        <input
+                        type="email"
+                        name="email"
+                        placeholder="E-mail Anda *"
+                        class="contact_input"
+                        id="contact-email"
+                        />
+                    </div>
+
+                    <div class="contact_form-input">
+                        <input
+                        type="tel"
+                        name="telepon"
+                        placeholder="Nomor Telepon Anda *"
+                        class="contact_input"
+                        id="contact-telepon"
+                        />
+                    </div>
+
+                    <div class="contact_form-input">
+                        <input
+                        type="text"
+                        name="subject"
+                        placeholder="Subjek *"
+                        class="contact_input"
+                        id="contact-subject"
+                        />
+                    </div>
+
+                    <div class="contact_form-input">
+                        <textarea
+                        name="message"
+                        id="contact-message"
+                        class="contact_input textarea"
+                        placeholder="Pesan Anda"
+                        ></textarea>
+                    </div>
+
+                    <input type="submit" value="Submit" class="btn" />
+
+                    <p class="error_message" id="error-message"></p>
+                    </form>
+                </div>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.707880583116!2d106.8151003!3d-6.302060699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ef0e8bb3799b%3A0x8c0381838fe6012d!2sMegumi%20Center%20Indonesia!5e0!3m2!1sen!2sid!4v1716014646061!5m2!1sen!2sid" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div class="footer_container container grid">
+            <a href="index.html" class="footer_logo">
+                <img src="assets/img/LOGO MEGUMI PANJANG (logo merah).png" alt="Megumi Center Indonesia" class="footer_img" />
+            </a>
+
+            <div class="footer_socials">
+                <a
+                    href="mailto:linggap21@gmail.com"
+                    target="_blank"
+                    class="footer_social-link"
+                >
+                <i class="uil uil-envelope"></i>
+                </a>
+                
+                <a
+                href="https://x.com/lyo_21"
+                target="_blank"
+                class="footer_social-link"
+                >
+                <i class="uil uil-twitter"></i>
+                </a>
+
+                <a
+                href="https://www.instagram.com/lyo.1/"
+                target="_blank"
+                class="footer_social-link"
+                >
+                <i class="uil uil-instagram"></i>
+                </a>
+
+                <a
+                href="https://wa.me/6281398438835"
+                target="_blank"
+                class="footer_social-link"
+                >
+                <i class="uil uil-whatsapp"></i>
+                </a>
+            </div>
+
+            <p class="footer_copyright">&copy; 2024. Created By Lingga Prasetyo</p>
+            </div>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-angle-up scrollup_icon"></i>
+    </a>
+    <!--=============== EMAIL JS ===============-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
